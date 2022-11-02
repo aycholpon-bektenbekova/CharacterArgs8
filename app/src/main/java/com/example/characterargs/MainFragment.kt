@@ -47,7 +47,7 @@ class MainFragment : Fragment() {
     private fun onClick(position: Int) {
 
         findNavController().navigate(MainFragmentDirections.actionMainFragmentToDetailFragment(
-            characterList[position].toString()
+            characterList[position]
         ))
     }
 

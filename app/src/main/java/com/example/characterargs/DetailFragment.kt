@@ -24,8 +24,8 @@ class DetailFragment : Fragment() {
         arguments?.let {
             navArgs = DetailFragmentArgs.fromBundle(it)
         }
-        binding.nameResult.text = navArgs.character
-        binding.ageResult.text = navArgs.character
+        binding.nameResult.text = navArgs.character.name
+        binding.ageResult.text = navArgs.character.age.toString()
     }
 
 
